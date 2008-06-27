@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DashBar 2.0\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2006-11-16 21:12+0100\n"
+"Last-Translator: Sebastien Erard\n"
+"Language-Team: z720 <wp@z720.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: D:/web/projets/wordpress/wp-content/plugins/DashBar\n"
+"X-Poedit-SearchPath-0: D:/web/projets/wordpress/wp-content/plugins/DashBar\n"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:67
+msgid "DashBar"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:75
+msgid "My Account"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:75
+msgid "Logout"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:76
+msgid "Dashboard"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:80
+msgid "Categories"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:83
+msgid "Links"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:86
+msgid "Files"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:89
+msgid "Options"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:92
+msgid "Plugins"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:98
+msgid "Write Post"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:104
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:108
+msgid "Edit"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:113
+msgid "Edit :"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:124
+#, php-format
+msgid "Awaiting Moderation (%s)"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:151
+msgid "Your theme is not ready for the DashBar Plugin. To use this Plugin you should add &lt;?php wp_footer(); ?&gt; in the footer of your theme."
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:173
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:307
+msgid "Change Style"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:177
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:182
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:187
+msgid "Incorrect color, it should be in hexadecimal form with 3 or 6 characters"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:197
+msgid "Incorrect text size format"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:202
+msgid "You can only align to right or left"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:207
+msgid "Opacity must be an integer between 0 and 100"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:211
+msgid "New settings successfully saved"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:214
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:307
+msgid "Restore Default"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:217
+msgid "Default settings successfully restored"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:267
+msgid "Style Customizing"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:272
+msgid "DashBar color"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:273
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:277
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:281
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:285
+msgid "Color Picker"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:276
+msgid "Text Color"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:280
+msgid "Highlighted element color"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:284
+msgid "Highlighted text color"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:288
+msgid "Text size"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:292
+msgid "Align"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:295
+msgid "left"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:296
+msgid "right"
+msgstr ""
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:301
+msgid "Opacity"
+msgstr ""
+
