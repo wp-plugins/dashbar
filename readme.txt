@@ -1,8 +1,8 @@
 === DashBar ===
 Contributors: z720
 Tags: admin
-Requires at least: 2.0.0
-Tested up to: 2.5.1
+Requires at least: 2.5
+Tested up to: 2.7
 Stable tag: 2.0.1
 
 Display a Enhanced WordPress.com-like navigation bar for logged users: direct acces to Dashboard, Write, Edit, Awaiting Moderation, Profile...
@@ -41,14 +41,9 @@ Use the pot file included to localize the bar to your language. Languages curren
 == Screenshots == 
 
 1. Standard DashBar view from the frontend
-2. Expanded view when the mouse is over a menu item with detailled links
-3. Custom DashBar look and feel editor
+2. Custom DashBar look and feel editor
 
 == Frequently Asked Questions ==
-
-= The "Write post" linl doesn't work in WordPress 2.5 =
-
-The link to post has changed with the new version of WordPress, a new release will fix this soon.
 
 = How can I share my localization ? =
 
