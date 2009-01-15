@@ -99,7 +99,7 @@ if(class_exists('DashBar')) {
 	class DashBar {
 	/* Attributes */	
 		var $prefixe = 'DashBar';
-		var $domain = 'DashBar/DashBar';
+		var $domain = 'DashBar';
 		var $version = '2.7.0-dev';
 	
 		var $default = array( 'bgcolor' => '#464646'
@@ -114,10 +114,13 @@ if(class_exists('DashBar')) {
 		
 		var $erreur = false;
 		
+		function getInstallDir() {
+			return basename(dirname(__FILE__));
+		}
 		
 		function DashBar() {
 // i18n : load texts
-			load_plugin_textdomain($this->domain);
+			load_plugin_textdomain($this->domain,false,basename(dirname(__FILE__)));
 // Load options to overwrite defaults
 			$c = get_option($this->prefixe);
 			foreach($this->default as $k => $v) {
@@ -142,9 +145,9 @@ if(class_exists('DashBar')) {
 		}
 		
 		function init() {
+			global $user_ID;
 			get_currentuserinfo();
-			global $userdata, $user_login, $user_identity;
-			if($user_login) {
+			if($user_ID != '') {
 				add_filter('wp_footer', array(&$this, 'display_bar'));
 				add_filter('wp_head', array(&$this, 'display_style'));
 				add_filter('wp_head', array(&$this, 'display_script'));
@@ -225,16 +228,20 @@ if(class_exists('DashBar')) {
 		}
 /* Plugin dir getter */
 		function getPluginURL() {
+			$url = '';
 			if(!defined('WP_PLUGIN_URL')) {
-				return get_option('siteurl').'/'.PLUGINDIR;
+				$url = get_option('siteurl').'/'.PLUGINDIR;
+			} else {
+				$url = WP_PLUGIN_URL;
 			}
-			return WP_PLUGIN_URL;		 
+			$rep = $this->getInstallDir();
+			return $url.'/'.$rep;
 		}
 
 /* Display inline style with customizing and link to DashBar structure CSS*/
 		function display_style() {
 ?><!-- [Begin:DashBar Style] -->
-<link rel="stylesheet" href="<?php echo $this->getPluginURL() ?>/DashBar/DashBar.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->getPluginURL() ?>/DashBar.css" type="text/css" />
 <style type="text/css">
 #DashBar { background-color: <?php echo $this->values['bgcolor']; ?>; background-image: url(<?php echo get_option('siteurl') ?>/wp-admin/images/logo-ghost.png); color:<?php echo $this->values['acolor']; ?>;font-size: <?php echo $this->values['height']; ?>!important;}
 #DashBar a { color: <?php echo $this->values['color']; ?>; }
@@ -249,7 +256,7 @@ if(class_exists('DashBar')) {
 		function display_script() {  ?>
 <!-- [Begin:DashBar Script] -->
 <script type="text/javascript">var DashBarInner = '<'+'a href="<?php echo get_option('siteurl').'/wp-admin/theme-editor.php'; ?>"'+'>'+'<?php echo addslashes($this->__('Your theme is not ready for the DashBar Plugin. To use this Plugin you should add &lt;?php wp_footer(); ?&gt; in the footer of your theme.'))?>'+'<'+'/'+'a'+'>';</script>
-<script type="text/javascript" src="<?php echo $this->getPluginURL() ?>/DashBar/DashBar.js"></script>
+<script type="text/javascript" src="<?php echo $this->getPluginURL() ?>/DashBar.js"></script>
 <!-- [End:DashBar Script] -->
 <?php		
 		}
@@ -258,42 +265,42 @@ if(class_exists('DashBar')) {
 		function admin_page_header() {
 			if((isset($_REQUEST['page'])) and ($_REQUEST['page'] == basename(__FILE__))) {
 				switch($_REQUEST['DashBarAction']) {
-					case __('Change Style',$this->domain):
+					case $this->__('Change Style'):
 						if(isset($_REQUEST['DashBarStyle']['bgcolor']) and preg_match('/^#[0-9a-f]{3,6}$/i',$_REQUEST['DashBarStyle']['bgcolor'])) {
 							$this->values['bgcolor'] = $_REQUEST['DashBarStyle']['bgcolor'];
 						} else {
-							$this->erreur[] = __("Incorrect color, it should be in hexadecimal form with 3 or 6 characters",$this->domain);
+							$this->erreur[] = $this->__("Incorrect color, it should be in hexadecimal form with 3 or 6 characters");
 						}
 						if(isset($_REQUEST['DashBarStyle']['fgcolor']) and preg_match('/^#[0-9a-f]{3,6}$/i',$_REQUEST['DashBarStyle']['fgcolor'])) {
 							$this->values['fgcolor'] = $_REQUEST['DashBarStyle']['fgcolor'];
 						} else {
-							$this->erreur[] = __("Incorrect color, it should be in hexadecimal form with 3 or 6 characters",$this->domain);
+							$this->erreur[] = $this->__("Incorrect color, it should be in hexadecimal form with 3 or 6 characters");
 						}
 						if(isset($_REQUEST['DashBarStyle']['color']) and preg_match('/^#[0-9a-f]{3,6}$/i',$_REQUEST['DashBarStyle']['color'])) {
 							$this->values['color'] = $_REQUEST['DashBarStyle']['color'];
 						} else {
-							$this->erreur[] = __("Incorrect color, it should be in hexadecimal form with 3 or 6 characters",$this->domain);
+							$this->erreur[] = $this->__("Incorrect color, it should be in hexadecimal form with 3 or 6 characters");
 						}
 						if(isset($_REQUEST['DashBarStyle']['acolor']) and preg_match('/^#[0-9a-f]{3,6}$/i',$_REQUEST['DashBarStyle']['acolor'])) {
 							$this->values['acolor'] = $_REQUEST['DashBarStyle']['acolor'];
 						} else {
-							$this->erreur[] = __("Incorrect color, it should be in hexadecimal form with 3 or 6 characters",$this->domain);
+							$this->erreur[] = $this->__("Incorrect color, it should be in hexadecimal form with 3 or 6 characters");
 						}
 						if(isset($_REQUEST['DashBarStyle']['height']) and preg_match('/^[0-9]+(|px|em|ex|%)$/i',$_REQUEST['DashBarStyle']['height'])) {
 							$this->values['height'] = $_REQUEST['DashBarStyle']['height'];
 						} else {
-							$this->erreur[] = __("Incorrect text size format",$this->domain);
+							$this->erreur[] = $this->__("Incorrect text size format");
 						}
 						$this->values['popup'] = (isset($_REQUEST['DashBarStyle']['popup']) && ($_REQUEST['DashBarStyle']['popup'] == '1')) ? true : false;						
 						if(!$this->erreur) {
 							update_option($this->prefixe, $this->values);
-							$this->msg = __('New settings successfully saved', $this->domain);
+							$this->msg = $this->__('New settings successfully saved');
 						}
 						break;
-					case __('Restore Default',$this->domain):
+					case $this->__('Restore Default'):
 							update_option($this->prefixe, $this->default);
 							$this->values = $this->default;
-							$this->msg = __('Default settings successfully restored', $this->domain);
+							$this->msg = $this->__('Default settings successfully restored');
 						break;
 					default:
 				}  ?>
