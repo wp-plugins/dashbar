@@ -1,5 +1,5 @@
 function checkDashBar() {
-  if(!document.getElementById) {return;} 
+  if(!document.getElementById) {return;}
   var body = document.getElementsByTagName('BODY')[0];
   var DashBar = document.getElementById('DashBar');  
   if(!DashBar) {
@@ -19,10 +19,6 @@ function checkDashBar() {
     DashBar.onmouseover = function() {this.className+= " over";};
     DashBar.onmouseout = function() {this.className = this.className.replace(" over","");};
   }
-}
-function toggleDashBar() {
-  DashBar = document.getElementById('DashBar');
-  DashBar.style['display'] = (DashBar.style['display'] == 'block') ?  'none' : 'block';
 }
 function addDashBarLoadEvent(func) {if (typeof window.onload != 'function') {window.onload = func;} else {var old = window.onload;window.onload = function() {old();func();}}}
 addDashBarLoadEvent(checkDashBar);

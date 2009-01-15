@@ -1,9 +1,9 @@
 === DashBar ===
 Contributors: z720
 Tags: admin
-Requires at least: 2.0.0
-Tested up to: 2.5.1
-Stable tag: 2.0.1
+Requires at least: 2.5
+Tested up to: 2.7
+Stable tag: 2.7
 
 Display a Enhanced WordPress.com-like navigation bar for logged users: direct acces to Dashboard, Write, Edit, Awaiting Moderation, Profile...
 
@@ -16,7 +16,7 @@ The bar is displayed on every page of the frontend, with links to :
 * DashBoard
 * Profile
 * Logout
-* Manage (Categories, Links, Files, Options, Plugins)
+* Manage (Posts, Pages, Links, Files)
 * Write Post
 
 and with contextual links to posts functions 
@@ -32,8 +32,12 @@ Use the pot file included to localize the bar to your language. Languages curren
 * English (Native as WordPress)
 * French
 
+Feel free to send me your PO/MO files, I'll put them in the next release
+
 
 == Installation ==
+
+Install from the repository or:
 
 1. Upload the content of the directory DashBar to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
@@ -41,18 +45,22 @@ Use the pot file included to localize the bar to your language. Languages curren
 == Screenshots == 
 
 1. Standard DashBar view from the frontend
-2. Expanded view when the mouse is over a menu item with detailled links
-3. Custom DashBar look and feel editor
+2. Custom DashBar look and feel editor
 
 == Frequently Asked Questions ==
-
-= The "Write post" linl doesn't work in WordPress 2.5 =
-
-The link to post has changed with the new version of WordPress, a new release will fix this soon.
 
 = How can I share my localization ? =
 
 Don't hesitate to let me know that you have localized the plugin in an other language. [Drop me a mail](http://z720.net/about/contact "Contact me")
 
+= What the hell, it doesn't work. What can I do ? =
 
+[Drop me a mail](http://z720.net/about/contact "Contact me") with any relevant data: WordPress version, theme, active plugins... I'll do my best to fix the issue.
 
+= My plugin is a really cool feature and I want to add a link in the DashBar =
+
+DashBar declares a DashBarLink object you can use in combination with the DashBar hook.
+ 1. Create e new DashBarLink instance: $mylink = new DashBarLink($label, $url, $credential (optional)) 
+ 2. Add it to the List : add_filter('DashBar_pre_link', function($list) { $list[] = $mylink; return $list; });
+
+This example might not work. But if you made a plugin. You got it...
