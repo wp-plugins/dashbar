@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DashBar 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-13 21:38+0100\n"
-"PO-Revision-Date: 2009-01-13 21:50+0100\n"
-"Last-Translator: Sebastien Erard\n"
+"POT-Creation-Date: 2009-01-19 21:05+0100\n"
+"PO-Revision-Date: 2009-01-19 21:06+0100\n"
+"Last-Translator: z720 <translate@z720.net>\n"
 "Language-Team: z720 <wp@z720.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,131 +15,136 @@ msgstr ""
 "X-Poedit-SearchPath-0: D:/web/projets/wordpress/wp-content/plugins/DashBar\n"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:67
-#: DashBar.php:155
+#: DashBar.php:158
 msgid "DashBar"
 msgstr "DashBar"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:76
-#: DashBar.php:165
+#: DashBar.php:168
 msgid "Dashboard"
 msgstr "Tableau de bord"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:75
-#: DashBar.php:168
+#: DashBar.php:171
 msgid "My Account"
 msgstr "Mon compte"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:75
-#: DashBar.php:169
+#: DashBar.php:172
 msgid "Logout"
 msgstr "Déconnexion"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:104
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:108
-#: DashBar.php:178
+#: DashBar.php:181
+#: DashBar.php:188
 msgid "Edit"
 msgstr "Modifier"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:124
-#: DashBar.php:192
+#: DashBar.php:195
 #, php-format
 msgid "Awaiting Moderation (%s)"
 msgstr "En attente de modération (%s)"
 
-#: DashBar.php:194
+#: DashBar.php:197
 msgid "Comments"
 msgstr "Commentaires"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:98
-#: DashBar.php:197
+#: DashBar.php:200
 msgid "New Post"
 msgstr "Nouvel Article"
 
-#: DashBar.php:200
+#: DashBar.php:203
 msgid "New Page"
 msgstr "Nouvelle Page"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:83
-#: DashBar.php:201
+#: DashBar.php:204
 msgid "New Link"
 msgstr "Nouveau Lien"
 
-#: DashBar.php:202
+#: DashBar.php:205
 msgid "Upload"
 msgstr "Nouveau Fichier"
 
-#: DashBar.php:206
+#: DashBar.php:209
 msgid "Manage"
 msgstr "Gérer"
 
-#: DashBar.php:209
+#: DashBar.php:212
 msgid "Pages"
 msgstr "Pages"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:83
-#: DashBar.php:210
+#: DashBar.php:213
 msgid "Links"
 msgstr "Liens"
 
-#: DashBar.php:211
+#: DashBar.php:214
 msgid "Media Library"
 msgstr "Bibliothèque"
 
-#: DashBar.php:212
+#: DashBar.php:215
 msgid "Design"
 msgstr "Thèmes"
 
+#: DashBar.php:216
+msgid "Plugins"
+msgstr "Extensions"
+
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:151
-#: DashBar.php:251
+#: DashBar.php:259
 msgid "Your theme is not ready for the DashBar Plugin. To use this Plugin you should add &lt;?php wp_footer(); ?&gt; in the footer of your theme."
 msgstr "Votre thème ne supporte pas actuellement le plugin DashBar. Pour l'utiliser il suffit d'ajouter &lt;?php wp_footer(); ?&gt; dans le pied de page de votre thème."
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:173
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:307
-#: DashBar.php:261
-#: DashBar.php:382
+#: DashBar.php:269
+#: DashBar.php:390
 msgid "Change Style"
 msgstr "Modifier le style"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:177
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:182
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:187
-#: DashBar.php:265
-#: DashBar.php:270
-#: DashBar.php:275
-#: DashBar.php:280
+#: DashBar.php:273
+#: DashBar.php:278
+#: DashBar.php:283
+#: DashBar.php:288
 msgid "Incorrect color, it should be in hexadecimal form with 3 or 6 characters"
 msgstr "Couleur incorrecte : mettre la couleur au format hexadécimal sur 3 ou 6 caractères."
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:197
-#: DashBar.php:285
+#: DashBar.php:293
 msgid "Incorrect text size format"
 msgstr "Format de taille de texte incorrect"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:211
-#: DashBar.php:290
+#: DashBar.php:298
 msgid "New settings successfully saved"
 msgstr "Les nouveaux paramètres ont été appliqués avec succès."
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:214
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:307
-#: DashBar.php:293
-#: DashBar.php:382
+#: DashBar.php:301
+#: DashBar.php:390
 msgid "Restore Default"
 msgstr "Rétablir la configuration initiale"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:217
-#: DashBar.php:296
+#: DashBar.php:304
 msgid "Default settings successfully restored"
 msgstr "La configuration initiale a été restorée."
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:267
-#: DashBar.php:347
+#: DashBar.php:355
 msgid "Style Customizing"
 msgstr "Personnaliser le style"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:272
-#: DashBar.php:352
+#: DashBar.php:360
 msgid "DashBar color"
 msgstr "Couleur DashBar"
 
@@ -147,38 +152,38 @@ msgstr "Couleur DashBar"
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:277
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:281
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:285
-#: DashBar.php:353
-#: DashBar.php:357
 #: DashBar.php:361
 #: DashBar.php:365
+#: DashBar.php:369
+#: DashBar.php:373
 msgid "Color Picker"
 msgstr "Couleur"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:276
-#: DashBar.php:356
+#: DashBar.php:364
 msgid "Text Color"
 msgstr "Couleur du texte"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:280
-#: DashBar.php:360
+#: DashBar.php:368
 msgid "Highlighted element color"
 msgstr "Couleur d'un élément en surbrillance"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:284
-#: DashBar.php:364
+#: DashBar.php:372
 msgid "Highlighted text color"
 msgstr "Couleur du texte en surbrillance"
 
 # D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:288
-#: DashBar.php:368
+#: DashBar.php:376
 msgid "Text size"
 msgstr "Taille du texte"
 
-#: DashBar.php:373
+#: DashBar.php:381
 msgid "Link Behaviour"
 msgstr "Comportement des liens"
 
-#: DashBar.php:377
+#: DashBar.php:385
 msgid "Open links in a new windows"
 msgstr "Ouvrir les liens dans une nouvelle fenêtre"
 

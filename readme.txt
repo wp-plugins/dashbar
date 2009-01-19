@@ -3,7 +3,7 @@ Contributors: z720
 Tags: admin
 Requires at least: 2.5
 Tested up to: 2.7
-Stable tag: 2.7
+Stable tag: 2.7.1
 
 Display a Enhanced WordPress.com-like navigation bar for logged users: direct acces to Dashboard, Write, Edit, Awaiting Moderation, Profile...
 
