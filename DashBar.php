@@ -3,7 +3,7 @@
 Plugin Name: DashBar
 Plugin URI: http://z720.net/produits/wordpress/dashbar
 Description: Display a Enhanced WordPress.com-like navigation bar for logged users: direct acces to Dashboard, Write, Edit, Awaiting Moderation, Profile...
-Version: 2.7
+Version: 2.7.1
 Author: Sebastien Erard
 Author URI: http://z720.net/
 */
@@ -169,7 +169,7 @@ if(class_exists('DashBar')) {
 																, '/wp-admin/index.php'
 																, 'read'
 																, array(new DashBarLink($this->__('My Account'), '/wp-admin/profile.php')
-																			 ,new DashBarLink($this->__('Logout'), '/wp_login.php?action=logout')
+																			 ,new DashBarLink($this->__('Logout'), '/wp-login.php?action=logout')
 																			 )
 																);
 /* Post related Menu : context related edit (posts in the loop)*/
@@ -210,9 +210,10 @@ if(class_exists('DashBar')) {
 																, '/wp-admin/edit.php'
 																, 'edit_posts'
 																, array( new DashBarLink($this->__('Pages'), '/wp-admin/edit-pages.php', 'edit_page')
-																				,new DashBarLink($this->__('Links'), '/wp-admin/link_manager.php', 'manage_links')
+																				,new DashBarLink($this->__('Links'), '/wp-admin/link-manager.php', 'manage_links')
 																				,new DashBarLink($this->__('Media Library'), '/wp-admin/upload.php', 'upload_files')
 																				,new DashBarLink($this->__('Design'), '/wp-admin/themes.php', 'switch_themes')
+																				,new DashBarLink($this->__('Plugins'), '/wp-admin/plugins.php', 'activate_plugins')
 																				)
 																);
 /* Plugin management 
