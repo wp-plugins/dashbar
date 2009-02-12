@@ -3,7 +3,7 @@
 Plugin Name: DashBar
 Plugin URI: http://z720.net/produits/wordpress/dashbar
 Description: Display a Enhanced WordPress.com-like navigation bar for logged users: direct acces to Dashboard, Write, Edit, Awaiting Moderation, Profile...
-Version: 2.7.1
+Version: 2.7.2
 Author: Sebastien Erard
 Author URI: http://z720.net/
 */
@@ -11,6 +11,24 @@ Author URI: http://z720.net/
 
 if(class_exists('DashBar')) {
 	die('You must deactivate previous version of DashBar Plugin for this version to work');
+} else {
+
+/* Currently §Dashbar only support PHP5 */
+if (version_compare(PHP_VERSION, '5.0.0', '<')) {
+    class DashBar {
+		function DashBar() {
+			add_action('admin_notices', array(&$this, 'warning'));
+		}
+		function warning() {
+			echo '
+		<div id="dashbar-warning" class="updated fade">
+			<p><strong>WordPress seems to be running with PHP 4 but DashBar only supports PHP 5.</strong></p>
+			<p>You can ask your hosting provider if PHP5 is installed on the server and how to activate it. DashBar will be ineffective until PHP 5 is activated.</p>
+		</div>
+			';
+		}
+	}
+	
 } else {
 
 
@@ -100,7 +118,7 @@ if(class_exists('DashBar')) {
 	/* Attributes */	
 		var $prefixe = 'DashBar';
 		var $domain = 'DashBar';
-		var $version = '2.7.0-dev';
+		var $version = '2.7.2';
 	
 		var $default = array( 'bgcolor' => '#464646'
 													,'height' => '14px'
@@ -185,7 +203,7 @@ if(class_exists('DashBar')) {
 					 $edit_ar[] = new DashBarLink(get_the_title(), '/wp-admin/post.php?action=edit&amp;post='.$id, ($current_user->ID != $authordata->ID) ? 'edit_others_posts' : 'edit_posts');
 				 }
 				 if(!empty($edit_ar)) {
-					 $links[] = new DashBarLink($this->__('Edit'), '/wp-admin/edit.php', 'edit_posts', &$edit_ar);
+					 $links[] = new DashBarLink($this->__('Edit'), '/wp-admin/edit.php', 'edit_posts', $edit_ar);
 				 }
 			}
 /* Comments moderation */
@@ -393,6 +411,7 @@ if(class_exists('DashBar')) {
 	<?php 
 		}		 
 	}
+}
 }
 
 // run the plugin

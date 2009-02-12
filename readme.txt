@@ -5,7 +5,7 @@ Requires at least: 2.5
 Tested up to: 2.7
 Stable tag: 2.7.1
 
-Display a Enhanced WordPress.com-like navigation bar for logged users: direct acces to Dashboard, Write, Edit, Awaiting Moderation, Profile...
+Display an Enhanced WordPress.com-like navigation bar for logged users: direct acces to Dashboard, Write, Edit, Awaiting Moderation, Profile...
 
 == Description ==
 
@@ -19,7 +19,7 @@ The bar is displayed on every page of the frontend, with links to :
 * Manage (Posts, Pages, Links, Files)
 * Write Post
 
-and with contextual links to posts functions 
+and with contextual links :
 
 * Edit this post if single
 * Choose from the list of posts displayed to edit one
@@ -33,6 +33,8 @@ Use the pot file included to localize the bar to your language. Languages curren
 * French
 
 Feel free to send me your PO/MO files, I'll put them in the next release
+
+WARNING: This plugin requires PHP 5.
 
 
 == Installation ==
