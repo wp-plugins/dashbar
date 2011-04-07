@@ -37,63 +37,26 @@ if (version_compare(PHP_VERSION, '5.0.0', '<')) {
 		var $prefixe = 'DashBar';
 		var $domain = 'DashBar';
 		var $version = '3.0';
-	
-		var $default = array( 'bgcolor' => '#464646'
-													,'height' => '14px'
-													,'color' => '#eee'
-													,'fgcolor' => '#777'
-													,'acolor' => '#eee'
-													,'popup' => false
-												);
-		var $values = array();
-		var $user_menu = array();
-		
-		var $erreur = false;
-		
-		function getInstallDir() {
-			return basename(dirname(__FILE__));
-		}
-		
-		function DashBar() {
-// i18n : load texts
-			load_plugin_textdomain($this->domain,false,basename(dirname(__FILE__)));
-// Load options to overwrite defaults
-/* TODO: Cleanup
-			$c = get_option($this->prefixe);
-			foreach($this->default as $k => $v) {
-				if(($c === false) or (!isset($c[$k]))) {
-					$this->values[$k] = $this->default[$k];
-				} else {
-					$this->values[$k] = $c[$k];
-				}
-			}
-// save options to database or create default for first time
-			update_option($this->prefixe, $this->values);
-// WP init
-*/
-			add_action('init', array(&$this, 'init'));
-// WP admin hooks
-// TODO: Cleanup
-//			add_action('admin_head', array(&$this, 'admin_page_header'));
-//			add_action('admin_menu', array(&$this, 'admin_pages')); 
-		}
-		
-		function __($str) {
-			return __($str, $this->domain);
-		}
-		
-		function init() {
-            add_action( 'admin_bar_menu', array(&$this, 'update_bar'), 31 );
-            // add_action('wp_before_admin_bar_render', array(&$this, 'update_bar'));
-            add_action( 'wp_before_admin_bar_render', array(&$this, 'add_network'));
-		}
 
-        /* TODO: Cleanup
-		function admin_pages() {
-			add_options_page($this->__('DashBar'), $this->__('DashBar'), 'manage_options', basename(__FILE__), array(&$this, 'admin_page'));		 
-		}
-        /**/
-	
+        /**
+         * Constructor
+         */
+        function DashBar() {
+            // WP init
+            add_action('init', array(&$this, 'init'));
+        }
+
+        /**
+         * Plugin init: mainly hook action to methods on WordPress init
+         */
+        function init() {
+            add_action( 'admin_bar_menu', array(&$this, 'update_bar'), 31 );
+            add_action( 'wp_before_admin_bar_render', array(&$this, 'add_network'));
+        }
+
+        /**
+         * Add posts edit to an edit menu with the list of posts the user can edit
+         */
         function update_bar() {
             global $wp_admin_bar;
             global $wp_query;
@@ -102,7 +65,7 @@ if (version_compare(PHP_VERSION, '5.0.0', '<')) {
                 // display menu if user has edit permission
                 if(current_user_can('edit_posts')) {
                     $id = 'dashbar_edit'; // Edit menu
-                    $wp_admin_bar->add_menu(array('id' => $id, 'title' => $this->__('Edit'), 'href'=> admin_url('post.php'))); 
+                    $wp_admin_bar->add_menu(array('id' => $id, 'title' => __('Edit'), 'href'=> admin_url('post.php'))); 
                     rewind_posts();
                     global $post;
                     // loop for posts on current page
@@ -119,6 +82,10 @@ if (version_compare(PHP_VERSION, '5.0.0', '<')) {
 
         }
         
+        /**
+         * Add a link to network admin in the first menu (my account).
+         * The link should only be visible to Network admins in a multisite context outside of the network admin pages 
+         */
         function add_network() {
             if(is_multisite() && current_user_can('manage_network') && !is_network_admin()) {
                 global $wp_admin_bar;
@@ -134,6 +101,5 @@ if (version_compare(PHP_VERSION, '5.0.0', '<')) {
 
 // run the plugin
 $the_dashbar = new DashBar();
-
 
 ?>
