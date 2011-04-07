@@ -3,7 +3,7 @@
 Plugin Name: DashBar
 Plugin URI: http://z720.net/produits/wordpress/dashbar
 Description: Display a Enhanced WordPress.com-like navigation bar for logged users: direct acces to Dashboard, Write, Edit, Awaiting Moderation, Profile...
-Version: 2.7.1
+Version: 2.7.2
 Author: Sebastien Erard
 Author URI: http://z720.net/
 */
