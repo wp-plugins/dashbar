@@ -30,6 +30,21 @@ Install from the repository or:
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 
+== Changelog ==
+
+= 3.0 =
+Integrate DashBar features in WordPress Admin Bar 
+
+= 2.7.2=
+Added Belorussian and Japanese translation
+
+== Upgrade Notice ==
+
+= 3.0 =
+This version doesn't need any previous customizing options, but your options won't be lost: maybe we will use them in a further version.
+Hence you can reomve them manually from the database any DashBar* option can be safely removed.
+
+
 == Frequently Asked Questions ==
 
 = How can I share my localization ? =
