@@ -2,8 +2,8 @@
 Contributors: z720
 Tags: admin
 Requires at least: 2.5
-Tested up to: 2.7
-Stable tag: 2.7.1
+Tested up to: 3.0
+Stable tag: 2.7.2
 
 Display a Enhanced WordPress.com-like navigation bar for logged users: direct acces to Dashboard, Write, Edit, Awaiting Moderation, Profile...
 
@@ -31,9 +31,14 @@ Use the pot file included to localize the bar to your language. Languages curren
 
 * English (Native as WordPress)
 * French
+* Japanese (thanks to Yoshitaka Fukunaga http://www.rhein-strasse.de/ )
+* Belorussian (thanks to http://www.fatcow.com/ )
 
 Feel free to send me your PO/MO files, I'll put them in the next release
 
+== Changelog ==
+
+Version 2.7.2: Added Belorussian and Japanese translation
 
 == Installation ==
 

@@ -1,0 +1,187 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DashBar 2.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-01-19 21:05+0100\n"
+"PO-Revision-Date: 2009-11-14 21:10+0200\n"
+"Last-Translator: Fat Cow <zhr@tut.by>\n"
+"Language-Team: z720 <wp@z720.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:67
+#: DashBar.php:158
+msgid "DashBar"
+msgstr "DashBar"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:76
+#: DashBar.php:168
+msgid "Dashboard"
+msgstr "Панель управления"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:75
+#: DashBar.php:171
+msgid "My Account"
+msgstr "Мой аккаунт"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:75
+#: DashBar.php:172
+msgid "Logout"
+msgstr "Выйти"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:104
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:108
+#: DashBar.php:181
+#: DashBar.php:188
+msgid "Edit"
+msgstr "Редактировать"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:124
+#: DashBar.php:195
+#, php-format
+msgid "Awaiting Moderation (%s)"
+msgstr "Ожидание модерации (%s)"
+
+#: DashBar.php:197
+msgid "Comments"
+msgstr "Комментарии"
+
+#: DashBar.php:200
+msgid "New Post"
+msgstr "Новый пост"
+
+#: DashBar.php:203
+msgid "New Page"
+msgstr "Новая страница"
+
+#: DashBar.php:204
+msgid "New Link"
+msgstr "Новая ссылка"
+
+#: DashBar.php:205
+msgid "Upload"
+msgstr "Закачать"
+
+#: DashBar.php:209
+msgid "Manage"
+msgstr "Управление"
+
+#: DashBar.php:212
+msgid "Pages"
+msgstr "Страницы"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:83
+#: DashBar.php:213
+msgid "Links"
+msgstr "Ссылки"
+
+#: DashBar.php:214
+msgid "Media Library"
+msgstr "Медиабиблиотека"
+
+#: DashBar.php:215
+msgid "Design"
+msgstr "Дизайн"
+
+#: DashBar.php:216
+msgid "Plugins"
+msgstr "Плагины"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:151
+#: DashBar.php:259
+msgid "Your theme is not ready for the DashBar Plugin. To use this Plugin you should add &lt;?php wp_footer(); ?&gt; in the footer of your theme."
+msgstr "Ваша тема не готова к DashBar Plugin. Для использования этого плагина вы должны добавить &lt;? PHP wp_footer ();?&gt; В нижней части вашей теме."
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:173
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:307
+#: DashBar.php:269
+#: DashBar.php:390
+msgid "Change Style"
+msgstr "Выбрать стиль"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:177
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:182
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:187
+#: DashBar.php:273
+#: DashBar.php:278
+#: DashBar.php:283
+#: DashBar.php:288
+msgid "Incorrect color, it should be in hexadecimal form with 3 or 6 characters"
+msgstr "Неправильный цвет, он должен быть в шестнадцатеричном виде с 3 или 6 символов"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:197
+#: DashBar.php:293
+msgid "Incorrect text size format"
+msgstr "Неправильный формат раздела"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:211
+#: DashBar.php:298
+msgid "New settings successfully saved"
+msgstr "Новые настройки сохранены"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:214
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:307
+#: DashBar.php:301
+#: DashBar.php:390
+msgid "Restore Default"
+msgstr "Восстановить умолчания "
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:217
+#: DashBar.php:304
+msgid "Default settings successfully restored"
+msgstr "Стандартные настройки восстановлены"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:267
+#: DashBar.php:355
+msgid "Style Customizing"
+msgstr "Настройка стиля"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:272
+#: DashBar.php:360
+msgid "DashBar color"
+msgstr "Цвет панели"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:273
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:277
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:281
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:285
+#: DashBar.php:361
+#: DashBar.php:365
+#: DashBar.php:369
+#: DashBar.php:373
+msgid "Color Picker"
+msgstr "Выбор цвета"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:276
+#: DashBar.php:364
+msgid "Text Color"
+msgstr "Цвет текста"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:280
+#: DashBar.php:368
+msgid "Highlighted element color"
+msgstr "Цвет подстветки"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:284
+#: DashBar.php:372
+msgid "Highlighted text color"
+msgstr "Цвет подстветки текста"
+
+# D:/web/projets/wordpress/wp-content/plugins/DashBar/DashBar.php:288
+#: DashBar.php:376
+msgid "Text size"
+msgstr "Размер текста"
+
+#: DashBar.php:381
+msgid "Link Behaviour"
+msgstr "Якорь ссылки"
+
+#: DashBar.php:385
+msgid "Open links in a new windows"
+msgstr "Открывать ссылки в новых окнах"
+
