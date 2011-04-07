@@ -42,7 +42,7 @@ Added Belorussian and Japanese translation
 
 = 3.0 =
 This version doesn't need any previous customizing options, but your options won't be lost: maybe we will use them in a further version.
-Hence you can reomve them manually from the database any DashBar* option can be safely removed.
+Hence you can remove them manually (if you want) from the database any DashBar* option can be safely removed.
 
 
 == Frequently Asked Questions ==
