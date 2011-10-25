@@ -1,10 +1,10 @@
 === DashBar ===
 Contributors: z720
-Tags: admin
-Donate link: http://z720.net/about/donate
+Tags: admin, adminbar
+--Donate link: http://z720.net/about/donate
 Requires at least: 3.1
-Tested up to: 3.1.1
-Stable tag: 2.7.2
+Tested up to: 3.2.1
+Stable tag: 3.0
 
 Enhance Wordpress Admin bar to add features present in previous versions of DashBar: mainly edit posts displayed on current page
 
@@ -33,12 +33,13 @@ Install from the repository or:
 
 == Screenshots ==
 
-1. New 'Edit' Menu with an list of direct edit link to posts from current page.
+1. New 'Edit' Menu with an direct edit link from current single page/post.
+2. New 'Edit' Menu with the list of posts or pages from current view.
 
 == Changelog ==
 
 = 3.0 =
-Integrate DashBar features in WordPress Admin Bar 
+Integrate DashBar features in WordPress Admin Bar (at least)
 
 = 2.7.2 =
 Added Belorussian and Japanese translation
@@ -47,20 +48,15 @@ Added Belorussian and Japanese translation
 == Upgrade Notice ==
 
 = 3.0 =
-This version doesn't need any previous customizing options, but your options won't be lost: maybe we will use them in a further version.
-Hence you can remove them manually (if you want) from the database any DashBar* option can be safely removed.
+This version doesn't need any of the previous customizing options, but your options won't be lost: maybe we will use them in a further version.
+Hence you can remove them manually (if you want) from the database. You just have to remove any DashBar* option in the table.
 
 
 == Frequently Asked Questions ==
 
-= How can I share my localization ? =
-
-Don't hesitate to let me know that you have localized the plugin in an other language. [Drop me a mail](http://z720.net/about/contact "Contact me")
-
-You can even [contribute to the project on github](https://github.com/z720/dashbar "DashBar on GitHub").
-
 = What the hell, it doesn't work. What can I do ? =
 
-[Drop me a mail](http://z720.net/about/contact "Contact me") with any relevant data: WordPress version, theme, active plugins... I'll do my best to fix the issue.
-
-If you know PHP and WordPress, You can even [fix or fork this project on github](https://github.com/z720/dashbar "DashBar on GitHub").
+Ther's a lot of option :
+1. You can [create an issue on Github](https://github.com/z720/dashbar/issues/new)
+2. [Drop me a mail](http://z720.net/about/contact "Contact me") with any relevant data: WordPress version, theme, active plugins... I'll do my best to fix the issue.
+3. If you know PHP and WordPress, You can even [submit a patch or fork this project on github](https://github.com/z720/dashbar "DashBar on GitHub").
