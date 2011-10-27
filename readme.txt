@@ -6,7 +6,7 @@ Requires at least: 3.1
 Tested up to: 3.2.1
 Stable tag: 3.0
 
-Enhance Wordpress Admin bar to add features present in previous versions of DashBar: mainly edit posts displayed on current page
+Enhance Wordpress Admin bar to add features present in previous versions of DashBar: mainly edit posts or pages displayed on current page
 
 == Description ==
 
